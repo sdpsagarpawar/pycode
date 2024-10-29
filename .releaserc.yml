@@ -1,0 +1,12 @@
+branches:
+  - name: main # Maybe also called master in your project
+
+tagFormat: ${version}
+
+# This section defines the Javascript plugins of semantic-release library to be used during the release process
+# The 3 plugins are sufficient. Feel free to add more plugins if necessary
+plugins:
+  - "@semantic-release/commit-analyzer"
+  - "@semantic-release/release-notes-generator"
+  - "@semantic-release/changelog"
+

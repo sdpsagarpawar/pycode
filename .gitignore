@@ -1,0 +1,9 @@
+**/__pycache__/
+**/flask_session/
+ssi_issuer/
+/dbg/
+/client/.next/
+organizer_app/client_app/node_modules
+organizer_app/server/ssi_camera
+organizer_app/server/data/meetings.json
+

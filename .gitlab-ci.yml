@@ -1,0 +1,46 @@
+include:
+  ## Load SASD variables
+  - remote: "https://system-architecture-solution-design.gitlabe2-pages.ext.net.nokia.com/sasd-software-templates/artifactory-espoo.yml"
+  ## Load Kaniko job template
+  - remote: "https://system-architecture-solution-design.gitlabe2-pages.ext.net.nokia.com/sasd-software-templates/kaniko.yml"
+  ## Load release job template
+  - remote: "https://system-architecture-solution-design.gitlabe2-pages.ext.net.nokia.com/sasd-software-templates/release.yml"
+
+stages:
+  # build is needed by this template, .pre, test and release are stages used by our other templates
+  - .pre
+  - build
+  - test
+  - release
+
+variables:
+  GIT_SUBMODULE_STRATEGY: normal
+  GIT_SUBMODULE_DEPTH: 1
+  GIT_SUBMODULE_FORCE_HTTPS: "true"
+
+semantic-release-prepare:
+  extends: .semantic-release-prepare
+
+build-docker-kaniko-camera-gui:
+  extends: .build-docker-kaniko
+  variables:
+    DOCKERFILE: media_server/Dockerfile.webapp
+    DOCKER_BUILD_CONTEXT: media_server
+    DOCKER_IMAGE_NAME: sdsr-ssi-camera-gui
+
+build-docker-kaniko-organizer-gui:
+  extends: .build-docker-kaniko
+  variables:
+    DOCKERFILE: organizer_app/client_app/Dockerfile.webapp
+    DOCKER_BUILD_CONTEXT: organizer_app/client_app
+    DOCKER_IMAGE_NAME: sdsr-ssi-organizer-gui
+
+build-docker-kaniko-organizer-api:
+  extends: .build-docker-kaniko
+  variables:
+    DOCKERFILE: organizer_app/server/Dockerfile.service
+    DOCKER_BUILD_CONTEXT: organizer_app/server
+    DOCKER_IMAGE_NAME: sdsr-ssi-organizer-api
+
+semantic-release-publish:
+  extends: .semantic-release-publish

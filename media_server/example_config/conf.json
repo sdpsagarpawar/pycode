@@ -1,0 +1,4 @@
+{
+    "verifier_url": "https://sdsr-ssi.fp.cloud.bell-labs.com/api/verify",
+    "minutes_before_meeting": 15
+}

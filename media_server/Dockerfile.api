@@ -1,0 +1,21 @@
+FROM ubuntu:20.04
+
+WORKDIR /app
+
+# Copy the code
+COPY server /app/server
+
+# Set up the environment variables related to configuration
+ENV SCS_CAMERA_MAPPING="conf/camera_mapping.json"
+ENV CONFIG="conf/conf.json"
+
+RUN apt-get update && apt-get install -y \
+    git \
+    python3 \
+    python3-pip
+
+RUN pip3 install ./server
+
+EXPOSE 30001
+
+CMD ["gunicorn", "-b", "0.0.0.0:30001", "-w", "64", "-t", "0", "-k", "gevent", "ssi_camera:app"]

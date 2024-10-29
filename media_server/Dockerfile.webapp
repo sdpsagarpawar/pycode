@@ -1,0 +1,15 @@
+FROM node:21-alpine
+
+ENV WDS_SOCKET_PORT=443
+
+WORKDIR /app/client
+
+COPY client /app/client
+
+RUN npm install
+
+RUN npm run build
+
+EXPOSE 3000
+
+CMD ["npm", "start"]

@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true,
+    "paths": {
+      "@/*": ["./*"]
+    }
+  },
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "../../../../../../var/folders/4g/6xqkgmdn6173bhhhb6x0y_v40000gn/T/!Users!boskov!Desktop!CODE!ssi-camera-access!client!components!Loader.tsx~", "../../../../../../var/folders/4g/6xqkgmdn6173bhhhb6x0y_v40000gn/T/!Users!boskov!Desktop!CODE!ssi-camera-access!client!pages!index.tsx~", "../../../../../../var/folders/4g/6xqkgmdn6173bhhhb6x0y_v40000gn/T/!Users!boskov!Desktop!CODE!ssi-camera-access!client!components!MetaMaskFailed.tsx~", "../../../../../../var/folders/4g/6xqkgmdn6173bhhhb6x0y_v40000gn/T/!Users!boskov!Desktop!CODE!ssi-camera-access!client!components!Progress.tsx~", "../../../../../../var/folders/4g/6xqkgmdn6173bhhhb6x0y_v40000gn/T/!Users!boskov!Desktop!CODE!ssi-camera-access!client!components!CamerasView.tsx~", "../../../../../../var/folders/4g/6xqkgmdn6173bhhhb6x0y_v40000gn/T/!Users!boskov!Desktop!CODE!ssi-camera-access!client!components!InfoLinks.tsx~", "../../../../../../var/folders/4g/6xqkgmdn6173bhhhb6x0y_v40000gn/T/!Users!boskov!Desktop!CODE!ssi-camera-access!client!components!BackendUnavailable.tsx~", "../../../../../../../var/folders/4g/6xqkgmdn6173bhhhb6x0y_v40000gn/T/!Users!boskov!Desktop!CODE!ssi-camera-access!media_server!client!components!WarrningMessage.tsx~", "../../../../../../../var/folders/4g/6xqkgmdn6173bhhhb6x0y_v40000gn/T/!Users!boskov!Desktop!CODE!ssi-camera-access!media_server!client!components!ErrorMessage.tsx~", "../../../../../../../var/folders/4g/6xqkgmdn6173bhhhb6x0y_v40000gn/T/!Users!boskov!Desktop!CODE!ssi-camera-access!media_server!client!components!Error.tsx~", "../../../../../../../var/folders/4g/6xqkgmdn6173bhhhb6x0y_v40000gn/T/!Users!boskov!Desktop!CODE!ssi-camera-access!media_server!client!components!Progress.tsx~", "../../../../../../../var/folders/4g/6xqkgmdn6173bhhhb6x0y_v40000gn/T/!Users!boskov!Desktop!CODE!ssi-camera-access!media_server!client!components!MetaMaskFailed.tsx~", "../../../../../../../var/folders/4g/6xqkgmdn6173bhhhb6x0y_v40000gn/T/!Users!boskov!Desktop!CODE!ssi-camera-access!media_server!client!components!CamerasView.tsx~", "../../../../../../../var/folders/4g/6xqkgmdn6173bhhhb6x0y_v40000gn/T/!Users!boskov!Desktop!CODE!ssi-camera-access!media_server!client!components!TitlePurpose.tsx~", "../../../../../../../var/folders/4g/6xqkgmdn6173bhhhb6x0y_v40000gn/T/!Users!boskov!Desktop!CODE!ssi-camera-access!media_server!client!components!InfoLinks.tsx~", "../../../../../../../var/folders/4g/6xqkgmdn6173bhhhb6x0y_v40000gn/T/!Users!boskov!Desktop!CODE!ssi-camera-access!media_server!client!components!CameraPane.tsx~", "../../../../../../../var/folders/4g/6xqkgmdn6173bhhhb6x0y_v40000gn/T/!Users!boskov!Desktop!CODE!ssi-camera-access!media_server!client!components!CameraScreen.tsx~"],
+  "exclude": ["node_modules"]
+}

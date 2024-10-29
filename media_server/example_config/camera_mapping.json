@@ -1,0 +1,4 @@
+{
+    "0": "0",
+    "1": "rtsp://admin:<password>@<ip_address>:<port>/<stream_name>"
+}
